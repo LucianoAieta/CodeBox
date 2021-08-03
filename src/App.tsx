@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import Editor from './components/editor/Editor';
+import Header from './components/header/Header';
 import Screen from './components/screen/Screen';
 import './sass/styles.sass';
 
@@ -21,6 +22,7 @@ function App() {
 
     return (
         <Fragment>
+            <Header title='Título' />
             <div className='editors'>
                 <Editor type='html' code={html} setCode={setHtml} />
                 <Editor type='css' code={css} setCode={setCss} />

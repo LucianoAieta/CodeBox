@@ -7,13 +7,7 @@ type HeaderProperties = {
 function Header(props: HeaderProperties) {
     const { title } = props;
 
-    return (
-        <div className='header main'>
-            <div>
-                <h1>{title}</h1>
-            </div>
-        </div>
-    );
+    return <div className='header main'></div>;
 }
 
 export default Header;
