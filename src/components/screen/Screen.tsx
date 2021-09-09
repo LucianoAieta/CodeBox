@@ -6,8 +6,13 @@ type ScreenProperties = {
 
 function Screen({ srcDoc }: ScreenProperties) {
     return (
-        <div>
-            <iframe title='sandbox' sandbox='allow-scripts' srcDoc={srcDoc} />
+        <div className='screen-container'>
+            <iframe
+                className='screen'
+                title='sandbox'
+                sandbox='allow-scripts'
+                srcDoc={srcDoc}
+            />
         </div>
     );
 }

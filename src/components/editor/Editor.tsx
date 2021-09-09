@@ -12,11 +12,14 @@ type EditorProps = {
 
 function Editor(props: EditorProps) {
     const { code, setCode, type } = props;
+
     return (
         <AceEditor
+            height='100%'
+            width='100%'
             className='editor'
             mode={type}
-            theme='monokai'
+            theme='github'
             value={code}
             setOptions={{
                 enableBasicAutocompletion: true,
@@ -25,9 +28,7 @@ function Editor(props: EditorProps) {
                 showLineNumbers: true,
                 tabSize: 4,
             }}
-            onChange={value => {
-                setCode(value);
-            }}
+            onChange={setCode}
         />
     );
 }

@@ -1,0 +1,21 @@
+.editor
+    position: relative
+    height: 100%
+    margin: 0
+    border-radius: 1em
+    background-color: $light-bg
+
+    &::after
+        content: ''
+        position: absolute
+        top: 1em
+        right: 2em
+        padding: .5em
+        background-color: rgba($dark-bg, .8)
+        border-radius: .5em
+        opacity: 0
+        transition: opacity .3s ease
+        color: $beau-blue
+
+    &:hover::after
+        opacity: 1
